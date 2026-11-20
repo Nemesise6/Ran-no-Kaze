@@ -5,83 +5,86 @@
 <h1 align="center">Ran no Kaze</h1>
 
 <p align="center">
-  La radio, la base de données et le carnet d'entraînement des musiques d'<b>AnimeMusicQuiz</b>, réunis dans une app Windows.<br>
-  <i>Radio, song database and training notebook for AnimeMusicQuiz songs, in one Windows app.</i>
+  A radio, a song database and a training notebook for <b>AnimeMusicQuiz</b> songs, in one Windows app.
 </p>
 
 <p align="center">
-  <a href="https://github.com/Nemesise6/Ran-no-Kaze/releases/latest"><b>⬇ Télécharger la dernière version</b></a>
+  <a href="https://github.com/Nemesise6/Ran-no-Kaze/releases/latest"><b>⬇ Download the latest version</b></a>
 </p>
 
-<!-- 📸 À AJOUTER : une grande capture de la radio en lecture (vidéo + jaquette), le plus bel écran de l'app.
-     Fichier : images/radio.png, puis décommente la ligne ci-dessous. -->
-<!-- <p align="center"><img src="images/radio.png" width="900" alt="La radio"></p> -->
+<p align="center"><img src="images/radio.png" width="900" alt="The radio"></p>
 
 ---
 
-## Ce que fait l'app
+## What the app does
 
-- **Radio** : écoute en continu les openings, endings et inserts d'AMQ, en audio ou en vidéo, avec des filtres (années, saisons, genres, artistes…), une file d'attente et le mini-lecteur toujours au premier plan.
-- **Songs** : toute la bibliothèque en tableau, avec la recherche, les filtres, les alt answers et une vue statistiques.
-- **Training** : révision espacée pour reconnaître les animes, les artistes ou les titres, un défi du jour, et ta progression dans le temps.
-- **Sheets** : tes notes et tes listes, l'import de party rankings, un sorter par duels, l'export en `.xlsx` ou vers Google Sheets.
-- **Nouveautés et Stats** : ce qui vient d'arriver dans la bibliothèque, et le tableau de bord de toute la base.
-- **4 thèmes** (Phalaenopsis, Daring Tact, Kitasan Black, Daiichi Ruby), français ou anglais, statut Discord, touches multimédia du clavier.
+- **Radio**: plays AMQ openings, endings and inserts non-stop, as audio or video, with filters (years, seasons, genres, artists, song length, your MAL or AniList list…), a queue and an always-on-top mini player.
+- **Songs**: the whole library as a table, with search, filters, alt answers and a statistics view.
+- **Training**: spaced repetition to learn to recognise anime, artists or song titles, a daily challenge, and your progress over time. It can stick to the shows of your MAL or AniList list (your VNDB list for visual novels).
+- **Sheets**: your ratings (one built-in sheet per library) and your own lists, party ranking import, a duel-based sorter, export to `.xlsx` or Google Sheets.
+- **Custom**: your own songs that aren't on AMQ (Google Drive, YouTube, catbox or direct links), with your rating, usable in your sheets, and shareable with friends as a file or a text to paste.
+- **New songs and Stats**: what just arrived in the library, and a dashboard for each library (AMQ, EMQ, Hentai) or all of them together.
+- **Optional libraries (18+)**: **EMQ** (Eroge Music Quiz, songs from visual novels) and **Hentai** (songs from adult anime). They're unchecked by default: tick them in the installer, or later in Settings.
+- **4 themes** (Phalaenopsis, Daring Tact, Kitasan Black, Daiichi Ruby), English or French, Discord status, keyboard media keys.
 
 | Songs | Training |
 |---|---|
-| <img src="images/songs.png" alt="Page Songs"> | <img src="images/training.png" alt="Page Training"> |
+| <img src="images/songs.png" alt="Songs page"> | <img src="images/training.png" alt="Training page"> |
+| **Sheets** | **Stats** |
+| <img src="images/sheets.png" alt="Sheets page"> | <img src="images/stats.png" alt="Stats page"> |
 
-| Stats | Mises à jour |
-|---|---|
-| <img src="images/stats.png" alt="Page Stats"> | <img src="images/tools.png" alt="Écran Tools : mise à jour de la bibliothèque"> |
-
-<!-- 📸 IDÉES de captures à ajouter dans images/ :
-     - sheets.png : une sheet remplie avec des notes (la page est vide sur une installation neuve)
-     - themes.png : les 4 thèmes côte à côte (Réglages > Thème)
-     - mini.png   : le mini-lecteur posé sur le bureau
-     - gif de la radio qui enchaîne deux songs -->
+<!-- 📸 IDEAS for screenshots to add in images/:
+     - custom.png : the Custom page with a few songs
+     - themes.png : the 4 themes side by side (Settings > Theme)
+     - mini.png   : the mini player on the desktop
+     - a gif of the radio going from one song to the next -->
 
 ## Installation
 
-1. Télécharge **`Ran-no-Kaze-Setup-x.y.z.exe`** dans la [dernière release](https://github.com/Nemesise6/Ran-no-Kaze/releases/latest), dans la partie *Assets*.
-2. Lance-le. Windows va sûrement afficher **« Windows a protégé votre ordinateur »** : l'app n'est pas signée par un éditeur payant. Clique sur **Informations complémentaires**, puis sur **Exécuter quand même**.
-3. Choisis le dossier d'installation, puis lance **Ran no Kaze**.
+1. Download **`Ran-no-Kaze-Setup-x.y.z.exe`** from the [latest release](https://github.com/Nemesise6/Ran-no-Kaze/releases/latest), in the *Assets* section.
+2. Run it. Windows will probably show **"Windows protected your PC"**: the app isn't signed by a paid publisher. Click **More info**, then **Run anyway**.
+3. Pick the install folder, choose the **optional libraries** (EMQ, Hentai), then launch **Ran no Kaze**.
+4. On first launch, a window asks for your **access key** (`RNK-XXXXX-XXXXX-XXXXX`): paste it. You can also enter it later in **Settings › Libraries**.
 
-Au premier lancement, la bibliothèque (environ 9 Mo) se télécharge et s'installe toute seule. Il faut une connexion internet. Ensuite la radio, Songs et Training sont prêts.
+Once the key is accepted, the libraries download and install on their own (about 9 MB for AMQ, 14 MB more for EMQ). You need an internet connection. Then the radio, Songs and Training are ready.
 
-**Configuration requise :** Windows 10 ou 11 en 64 bits, et une connexion internet pour écouter les musiques.
+**Requirements:** Windows 10 or 11, 64-bit, and an internet connection to play the songs.
 
-> ⚠️ Ne télécharge pas le fichier `library-….rnk` de la release « library » : ce n'est pas l'app. C'est la bibliothèque, que l'app récupère toute seule.
+## Updates
 
-## Mises à jour
+Nothing to do on your side:
 
-Tout se fait sans rien faire de ton côté :
+- **The libraries** (new songs, alt answers…): the app checks at launch and then every 6 hours. A Windows notification tells you when a new version is installed. You can also check by hand in **Settings › Libraries**.
+- **The app**: new versions download in the background and install when you quit the app.
 
-- **La bibliothèque** (nouvelles songs, alt answers…) : l'app vérifie au lancement puis toutes les 6 heures. Une notification Windows te prévient quand une nouvelle version est installée. Tu peux aussi lancer la vérification à la main dans **Tools**, et la couper dans **Réglages › Automatismes**.
-- **L'app** : les nouvelles versions se téléchargent en arrière-plan et s'installent quand tu quittes l'app.
+## Your data
 
-## Tes données
+- Everything stays **on your computer**: your ratings, sheets, training, comments and settings. There's no account and no usage statistics.
+- What leaves your computer: your **access key** and a random ID for your PC when the app downloads the libraries, the username you type when you load a MAL, AniList or VNDB list (sent to that site), and your Discord status if Discord is open (it can be turned off in Settings).
+- A library update **never touches** your data. A backup of your database is made before each update, and the last 5 are kept.
+- **Settings › Data** shows where your database is and lets you copy it at any time.
+- To take your ratings elsewhere: export a sheet (`.xlsx`, or a copy for Google Sheets).
 
-- Tout reste **sur ton ordinateur** : tes notes, tes sheets, ton training, tes commentaires et tes réglages. Rien n'est envoyé nulle part, il n'y a ni compte ni statistiques d'usage.
-- Une mise à jour de la bibliothèque **ne touche jamais** à tes données. Une sauvegarde de ta base est faite avant chaque mise à jour, et les 5 dernières sont gardées.
-- **Réglages › Données** montre où se trouve ta base et permet d'en faire une copie à tout moment.
-- Pour récupérer tes notes ailleurs : **Tools › Exporter mes notes** (CSV), ou depuis une sheet (`.xlsx`, copie pour Google Sheets).
+## FAQ
 
-## Questions fréquentes
+**The radio doesn't play anything.**
+Check your internet connection: songs are streamed live from AMQ's servers. In the radio, open *Settings* and pick the server closest to you (EU, NA East or NA West).
 
-**La radio ne lit rien.**
-Vérifie ta connexion internet : les musiques sont lues en direct depuis les serveurs d'AMQ. Dans la radio, ouvre *Réglages* et choisis le serveur le plus proche de chez toi (EU, NA East ou NA West).
+**My antivirus blocks the installer.**
+It's the same issue as the SmartScreen warning: the app isn't signed. Only download the installer from this releases page.
 
-**L'antivirus bloque l'installeur.**
-C'est le même problème que l'avertissement SmartScreen : l'app n'est pas signée. Tu peux télécharger l'installeur uniquement depuis cette page de releases.
+**Where do I get an access key?**
+Ask the author of the app. Each key is personal: it gets tied to the first PC that uses it. If you change PCs, ask for your key to be reset.
 
-**Comment désinstaller ?**
-Paramètres Windows › Applications › Ran no Kaze › Désinstaller. Ta base n'est pas supprimée : pour la retrouver ou l'effacer, ouvre son dossier avant de désinstaller avec **Réglages › Données › Ouvrir le dossier**.
+**How do I add or remove EMQ or Hentai?**
+**Settings › Libraries › Extra libraries.** Ticking one downloads it, unticking removes its songs from your database.
 
-**J'ai trouvé un bug ou j'ai une idée.**
-Ouvre une [issue](https://github.com/Nemesise6/Ran-no-Kaze/issues), avec une capture si possible.
+**How do I uninstall?**
+Windows Settings › Apps › Ran no Kaze › Uninstall. Your database isn't deleted: to find it or delete it, open its folder before uninstalling with **Settings › Data › Open folder**.
 
-## À propos
+**I found a bug or I have an idea.**
+Open an [issue](https://github.com/Nemesise6/Ran-no-Kaze/issues), with a screenshot if you can.
 
-Ran no Kaze est un projet de fan, gratuit et non commercial. Il n'est **ni affilié ni approuvé** par AnimeMusicQuiz, ni par Cygames (*Uma Musume Pretty Derby*). Les musiques, vidéos et noms appartiennent à leurs ayants droit, et les illustrations des thèmes à Cygames. Le code source n'est pas publié : ce dépôt ne sert qu'à distribuer l'app et ses mises à jour.
+## About
+
+Ran no Kaze is a free, non-commercial fan project. It is **not affiliated with or endorsed by** AnimeMusicQuiz, Eroge Music Quiz or Cygames (*Uma Musume Pretty Derby*). Songs, videos and names belong to their rights holders, and the theme artwork to Cygames. The source code isn't published: this repository only distributes the app and its updates.
